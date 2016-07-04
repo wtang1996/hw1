@@ -12,11 +12,11 @@ body {
 
 @media only screen and (max-width: 640px) {
   .navBar_item {
-    display: none;
+    opacity: 0;
   }
 
   .signIn {
-    display: flex;
+    opacity: 1;
   }
 
   form {
@@ -29,12 +29,29 @@ body {
   .bottom {
     flex-direction: column;
     align-items: flex-start;
-    flex-wrap: nowrap;
   }
 
   .links {
     display: none;
   }
+
+  .support {
+    display: none;
+  }
+
+  input[type=checkbox]:checked ~ nav {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    background: black;
+    font-size: 3rem;
+  }
+
+  input[type=checkbox]:checked ~ .navBar_item {
+    opacity: 1;
+  }
+
 }
 
 nav {
@@ -75,7 +92,7 @@ footer {
   flex-direction: row;
   align-items: center;
   padding: 0 7vw;
-  height: 25vh;
+  height: 30vh;
   border-top: 1px solid #A3A3A3;
 }
 
