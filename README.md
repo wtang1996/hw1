@@ -14,7 +14,7 @@
 
 * I have 1 narrow phone friendly version per the screenshots. Here's the screen cap:
   ![layout stage]
-  https://github.com/wtang1996/hw1/blob/gh-pages/langding%20page--mobile%20version.png
+  https://github.com/wtang1996/hw1/blob/gh-pages/langding page--mobile version.png
 
 * I included many details such as hover effects and border radius.
 * I also did the first two extra credits. I used CSS Checkbox Hack for the mobile version Menu and there's a fancy CSS transition coming with it. Here's the screen cap of the menu:
