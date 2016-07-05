@@ -165,7 +165,7 @@ li {
   background: #D3D3D3;
 }
 
-#toggle-1 {
+#menu {
   position: absolute;
   left: 95vw;
   opacity: 0;
@@ -173,16 +173,15 @@ li {
 
 @media only screen and (max-width: 640px) {
 
-  #toggle-1:checked ~ nav {
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 100vh;
-    background: black;
-    font-size: 3rem;
+  #menu:checked ~ .middle {
+    display: none;
   }
 
-  #toggle-1:checked ~ .navBar_item {
+  #menu:checked ~ .bottom {
+    display: none;
+  }
+
+  #menu:checked ~ .navBar_item {
     opacity: 1;
   }
 
@@ -222,7 +221,4 @@ li {
   .support {
     display: none;
   }
-
-
-
 }
